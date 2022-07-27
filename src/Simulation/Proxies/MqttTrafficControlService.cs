@@ -20,6 +20,8 @@ namespace Simulation.Proxies
             var mqttHost = Environment.GetEnvironmentVariable("MQTT_HOST") ?? "localhost";
             var factory = new MqttFactory();
             var client = factory.CreateMqttClient();
+            // ポート番号はMosQuittoのコンテナ起動時のポート番号と合わせる
+            // src/Infrastructure/mosquittoのディレクトリ参照
             var mqttOptions = new MqttClientOptionsBuilder()
                 .WithTcpServer(mqttHost, 1883)
                 .WithClientId($"camerasim{camNumber}")

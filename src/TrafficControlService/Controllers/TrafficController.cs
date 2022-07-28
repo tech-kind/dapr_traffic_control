@@ -24,6 +24,9 @@ namespace TrafficControlService.Controllers
 
 #if !USE_ACTORMODEL
 
+        // MQTTのメッセージブローカーによって送信されたデータはDaprによってバインディングされる
+        // Daprのバインディングの構成は「src/dapr/components/entrycam.yaml」を参照
+        // バインディング構成内のmetadata.nameフィールドを参照することによって、呼び出すHTTPエンドポイントのURLを特定する
         [HttpPost("entrycam")]
         public async Task<ActionResult> VehicleEntryAsync(VehicleRegistered msg)
         {
@@ -45,6 +48,9 @@ namespace TrafficControlService.Controllers
             }
         }
 
+        // MQTTのメッセージブローカーによって送信されたデータはDaprによってバインディングされる
+        // Daprのバインディングの構成は「src/dapr/components/exitcam.yaml」を参照
+        // バインディング構成内のmetadata.nameフィールドを参照することによって、呼び出すHTTPエンドポイントのURLを特定する
         [HttpPost("exitcam")]
         public async Task<ActionResult> VehicleExitAsync(VehicleRegistered msg, [FromServices] DaprClient daprClient)
         {

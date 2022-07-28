@@ -1,5 +1,8 @@
 ﻿namespace TrafficControlService.Repositories
 {
+    // 車両情報はDaprを通してRedisに書き込まれる
+    // 実装は書き込み先を意識しなくてよい
+    // ストアの指定は「src/dapr/component/statestore.yaml」を参照
     public class DaprVehicleStateRepository : IVehicleStateRepository
     {
         private const string DAPR_STORE_NAME = "statestore";

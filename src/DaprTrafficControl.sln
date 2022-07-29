@@ -5,7 +5,9 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Simulation", "Simulation\Simulation.csproj", "{3C5C5594-BF7C-48B8-B704-D71A3B92EFB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficControlService", "TrafficControlService\TrafficControlService.csproj", "{4973B497-798E-4B04-B01C-AF25D77723C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrafficControlService", "TrafficControlService\TrafficControlService.csproj", "{4973B497-798E-4B04-B01C-AF25D77723C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FineCollectionService", "FineCollectionService\FineCollectionService.csproj", "{2D3BAAC0-83BB-4F68-B4FC-1F22D6C7FE1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{4973B497-798E-4B04-B01C-AF25D77723C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4973B497-798E-4B04-B01C-AF25D77723C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4973B497-798E-4B04-B01C-AF25D77723C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D3BAAC0-83BB-4F68-B4FC-1F22D6C7FE1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D3BAAC0-83BB-4F68-B4FC-1F22D6C7FE1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D3BAAC0-83BB-4F68-B4FC-1F22D6C7FE1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D3BAAC0-83BB-4F68-B4FC-1F22D6C7FE1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

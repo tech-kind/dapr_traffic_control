@@ -4,7 +4,7 @@ metadata:
   name: statestore
   namespace: dapr-trafficcontrol
 spec:
-  type: state.radis
+  type: state.redis
   version: v1
   metadata:
   - name: redisHost
@@ -13,5 +13,10 @@ spec:
     secretKeyRef:
       name: state.redisPassword
       key: state.redisPassword
+  - name: actorStateStore
+    value: "true"
+auth:
+  secretStore: trafficcontrol-secrets
 scopes:
   - trafficcontrolservice
+  

@@ -13,9 +13,9 @@ spec:
     secretKeyRef:
       name: state.redisPassword
       key: state.redisPassword
-#   - name: actorStateStore
-#     value: "true"
-# auth:
-#   secretStore: trafficcontrol-secrets
+  - name: actorStateStore
+    value: "true"
+auth:
+  secretStore: trafficcontrol-secrets
 scopes:
   - trafficcontrolservice

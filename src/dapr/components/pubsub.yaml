@@ -21,4 +21,4 @@ spec:
     value: parallel
 scopes:
   - trafficcontrolservice
-  # - finecollectionservice
+  - finecollectionservice

@@ -4,7 +4,7 @@
     {
         public int CalculateFine(string licenseKey, int violationInKmh)
         {
-            if (licenseKey != "HX783-K2L7V-DRJ4A-5PN1G")
+            if (licenseKey != "HX783-K2L7V-CRJ4A-5PN1G")
             {
                 throw new InvalidOperationException("Invalid license-key specified.");
             }

@@ -27,12 +27,12 @@
                 if (runningInK8s)
                 {
                     var k8sSecrets = daprClient.GetSecretAsync("kubernates", "trafficcontrol-secrets", metadata).Result;
-                    _fineCalculatorLicenseKey = k8sSecrets["finecalculator.licesekey"];
+                    _fineCalculatorLicenseKey = k8sSecrets["finecalculator.licensekey"];
                 }
                 else
                 {
-                    var secrets = daprClient.GetSecretAsync("trafficcontrol-secrets", "finecalculator.licesekey", metadata).Result;
-                    _fineCalculatorLicenseKey = secrets["finecalculator.licesekey"];
+                    var secrets = daprClient.GetSecretAsync("trafficcontrol-secrets", "finecalculator.licensekey", metadata).Result;
+                    _fineCalculatorLicenseKey = secrets["finecalculator.licensekey"];
                 }
             }
         }
